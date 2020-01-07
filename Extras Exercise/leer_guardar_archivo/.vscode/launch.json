@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Proyecto",
+            "request": "launch",
+            "mainClass": "proyecto.Proyecto",
+            "projectName": "leer_guardar_archivo_39e8dc33"
+        }
+    ]
+}
