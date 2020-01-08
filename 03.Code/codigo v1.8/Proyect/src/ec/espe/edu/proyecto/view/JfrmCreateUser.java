@@ -6,6 +6,9 @@
 package ec.espe.edu.proyecto.view;
 
 import ec.espe.edu.proyecto.model.IPersonal;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -124,7 +127,12 @@ public class JfrmCreateUser extends javax.swing.JFrame {
         IPersonal proyecto = new IPersonal();
         String username = txtName.getText();
         String password = txtPassword.getText();
-        proyecto.create(username, password);
+        try {
+            proyecto.create(username, password);
+        } catch (IOException ex) {
+            System.out.println("error creating pesonal");
+            Logger.getLogger(JfrmCreateUser.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JbutCreateActionPerformed
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed

@@ -26,22 +26,22 @@ public class userMain {
      */
     public static void main(String[] args) throws IOException {
 
-        Scanner scan = new Scanner(System. in);
-        String admName = "pepito";
-        String admContraseña = "pepito123";
-        String userName, userContra; 
-        System.out.println("INGRESE USUARIO:");
-        userName = scan.nextLine();
-        System.out.println("INGRESE CONTRASEÑA:");
-        userContra = scan.nextLine();
+//        Scanner scan = new Scanner(System. in);
+//        String admName = "pepito";
+//        String admContraseña = "pepito123";
+//        String userName, userContra; 
+//        System.out.println("INGRESE USUARIO:");
+//        userName = scan.nextLine();
+//        System.out.println("INGRESE CONTRASEÑA:");
+//        userContra = scan.nextLine();
         Menu menu = new Menu();
         
-        if (userName.equals(admName) && userContra.equals(admContraseña)){
+//        if (userName.equals(admName) && userContra.equals(admContraseña)){
 
             menu.showMenuAdm();
-        }
+//        }
         
-        IPersonal archivoPersonal = new IPersonal();
-        if (archivoPersonal.existPersonal(userName, userContra))menu.showMenuUser();
+//        IPersonal archivoPersonal = new IPersonal();
+//        if (archivoPersonal.existPersonal(userName, userContra))menu.showMenuUser();
     }
 }

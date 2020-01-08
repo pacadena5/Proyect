@@ -9,6 +9,8 @@ import com.csvreader.CsvWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -28,9 +30,17 @@ public class Menu {
         
             switch(opc){
                 case 1:
-//                    IPersonal proyecto = new IPersonal();
-//                    proyecto.create();
+                    IPersonal proyecto = new IPersonal();
+                {
+                    try {
+                        proyecto.create("pyp", "sapo");
+                    } catch (IOException ex) {
+                        System.out.println("error creating");
+                        Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
                 break;
+                    
                 case 11:
                     
                     Console console = new Console();
