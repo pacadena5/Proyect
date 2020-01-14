@@ -12,15 +12,22 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Cristian Arauz
+ * @author Pablo Cadena
  */
 public class JfrmCreateUser extends javax.swing.JFrame {
-
+DB db;
+DBCollection tablaPersonal;
     /**
      * Creates new form JfrmCreateUser
      */
     public JfrmCreateUser() {
-        initComponents();
+        /*
+	Mongo mongo = new Mongo("localhost",27017);
+	db = mongo.getDB("dataPersonal");
+	tablaPersonal = db.getCollection("tablaPersonal");
+	*/
+
+	initComponents();
         
        
     }
@@ -133,6 +140,13 @@ public class JfrmCreateUser extends javax.swing.JFrame {
             System.out.println("error creating pesonal");
             Logger.getLogger(JfrmCreateUser.class.getName()).log(Level.SEVERE, null, ex);
         }
+	/*
+	BasicDBObject document = new BasicDBObject();
+	documento.put("userName", "'"+ txtName.getText() +"'");
+	documento.put("userPassword", "'"+ txtPassword.getText() +"'");
+	documento.put("userType", "'"+ txtType.getText() +"'");
+	tablaPersonal.insert(document);
+	*/
     }//GEN-LAST:event_JbutCreateActionPerformed
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
