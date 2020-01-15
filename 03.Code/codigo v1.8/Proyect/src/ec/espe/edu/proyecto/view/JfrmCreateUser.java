@@ -15,8 +15,8 @@ import java.util.logging.Logger;
  * @author Pablo Cadena
  */
 public class JfrmCreateUser extends javax.swing.JFrame {
-DB db;
-DBCollection tablaPersonal;
+    private DB db;
+    private DBCollection tablaPersonal;
     /**
      * Creates new form JfrmCreateUser
      */
