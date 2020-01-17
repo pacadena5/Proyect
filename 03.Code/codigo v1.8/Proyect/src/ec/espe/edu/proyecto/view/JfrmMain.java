@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
  * @author Invitado
  */
 public class JfrmMain extends javax.swing.JFrame {
-
+//DBCollection tablaPersonal;
     /**
      * Creates new form userMainVist
      */
@@ -143,10 +143,12 @@ public class JfrmMain extends javax.swing.JFrame {
         else if (archivoPersonal.existPersonal(userName, userContra))try {
             menu.showMenuUser();
         } catch (IOException ex) {
+            System.out.println("Exeption e (menu):");
             Logger.getLogger(JfrmMain.class.getName()).log(Level.SEVERE, null, ex);
         }
         if (!userName.equals(admName) && userContra.equals(admContraseña)||userName.equals(admName) && !userContra.equals(admContraseña)||!userName.equals(admName) && !userContra.equals(admContraseña)){
         JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos","Mesage error" , 0);
+        
         jfrmGetUserName.setText("");
         jfrmGetPassword.setText("");
         }

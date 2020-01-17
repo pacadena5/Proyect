@@ -77,6 +77,38 @@ public class IPersonal {
 
         return band;
     }
+    
+    /*MONGO DB:
+    public ArrayList<User>  leerMongo(){
+        DBCursor cursor = tablaPersonal.find();
+        Gson gson = new Gson();
+        ArrayList<User> users = new ArrayList<>();
+
+        String line = "";
+        while(cursor.hasnext()){
+            line = cursor.next();
+            User user = new User();
+            user = gson.fromJson( line, User.class);
+            users.add(user);
+        }
+    }
+    
+    public boolean existPersonalMongo(String userName, String userContra ){
+        Gson gson = new Gson();
+        ArrayList<User> users = new ArrayList<>();
+        users = leerMongo();
+        boolean band = false;
+        for(int i =0; i<users.size(); i++){
+            if(userName.equals(users.get(i).getName()) &&
+               userContra.equals(users.get(i).getPassword())){
+                band = true;
+            }
+            
+        }
+
+        return band;
+    */
+    
 /* PARA GUARDAR EN CSV:
     public  void create(String username, String password) {
         String studentFile = "Personal.csv";

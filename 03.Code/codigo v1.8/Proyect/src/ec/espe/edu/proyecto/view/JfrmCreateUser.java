@@ -5,6 +5,8 @@
  */
 package ec.espe.edu.proyecto.view;
 
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
 import ec.espe.edu.proyecto.model.IPersonal;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -16,8 +18,8 @@ import java.util.logging.Logger;
  * @author Pablo Cadena
  */
 public class JfrmCreateUser extends javax.swing.JFrame {
-//DB db;
-//DBCollection tablaPersonal;
+DB db;
+DBCollection tablaPersonal;
     /**
      * Creates new form JfrmCreateUser
      */
