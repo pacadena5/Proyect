@@ -10,13 +10,14 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 /**
  *
  * @author Pablo Cadena
  */
 public class JfrmCreateUser extends javax.swing.JFrame {
-    private DB db;
-    private DBCollection tablaPersonal;
+//DB db;
+//DBCollection tablaPersonal;
     /**
      * Creates new form JfrmCreateUser
      */
