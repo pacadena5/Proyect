@@ -145,9 +145,9 @@ DBCollection tablaPersonal;
         }
 	/*
 	BasicDBObject document = new BasicDBObject();
-	documento.put("userName", "'"+ txtName.getText() +"'");
-	documento.put("userPassword", "'"+ txtPassword.getText() +"'");
-	documento.put("userType", "'"+ txtType.getText() +"'");
+	document.put("userName", "'"+ txtName.getText() +"'");
+	document.put("userPassword", "'"+ txtPassword.getText() +"'");
+	document.put("userType", "'"+ txtType.getText() +"'");
 	tablaPersonal.insert(document);
 	*/
     }//GEN-LAST:event_JbutCreateActionPerformed
